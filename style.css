@@ -1,17 +1,18 @@
- body {
-      font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+body {
+      font-family: 'Oswald';
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
       margin: 0;
-      background-color: #f4f4f4;
+      background-image: url (https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?cs=srgb&dl=pexels-veeterzy-39811.jpg&fm=jpg)
     }
-    header {
-      margin-bottom: 20px;
+header {
+    margin-bottom: 20px;
     }
-    main {
+main {
       width: 90%;
       max-width: 700px;
       background-color: #fff;
