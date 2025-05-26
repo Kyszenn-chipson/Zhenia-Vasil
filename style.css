@@ -1,0 +1,143 @@
+ body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      margin-bottom: 20px;
+    }
+    main {
+      width: 90%;
+      max-width: 700px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      position: relative; /* For absolute positioning of navigation */
+    }
+
+    /* Start Screen Styling */
+    #start-screen {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    #start-button {
+      padding: 15px 30px;
+      font-size: 1.5em;
+      cursor: pointer;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    #start-button:hover {
+      background-color: #218838;
+    }
+
+    /* Question Slide Styling */
+    .question-slide {
+      display: none; /* Hidden by default */
+      padding: 20px 0;
+    }
+    .question-slide p:first-of-type {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    .question-slide img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 15px auto;
+      border-radius: 5px;
+    }
+    .options p {
+      cursor: pointer;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+    .options p:hover:not(.selected):not(.correct):not(.incorrect) {
+      background-color: #f0f0f0;
+      border-color: #bbb;
+    }
+    .selected {
+      background-color: #e0f7fa;
+      border-color: #00bcd4;
+      font-weight: bold;
+    }
+    .correct {
+      background-color: #d4edda;
+      color: #155724;
+      border-color: #28a745;
+      pointer-events: none; /* Disable clicks after answer */
+    }
+    .incorrect {
+      background-color: #f8d7da;
+      color: #721c24;
+      border-color: #dc3545;
+      pointer-events: none; /* Disable clicks after answer */
+    }
+
+    /* Navigation Buttons */
+    .navigation-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .navigation-buttons button {
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .navigation-buttons button:hover {
+      background-color: #0056b3;
+    }
+    .navigation-buttons button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+
+    #submitQuiz {
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      cursor: pointer;
+      background-color: #6f42c1;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      display: block; /* Make it a block element to center it */
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #submitQuiz:hover {
+      background-color: #5a359d;
+    }
+    #submitQuiz:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+
+    #score {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 1.4em;
+      color: #333;
+    }
+    #quiz-container {
+      display: none; /* Hidden until quiz starts */
+    }
