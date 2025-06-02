@@ -1,21 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-body {
-      font-family: 'Oswald';
+ body {
+      font-family: sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
       margin: 0;
-      background-image: url (https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?cs=srgb&dl=pexels-veeterzy-39811.jpg&fm=jpg)
+      background-color: #3366cc;
     }
-header {
-    margin-bottom: 20px;
+    header {
+      margin-bottom: 20px;
     }
-main {
+    main {
       width: 90%;
       max-width: 700px;
-      background-color: #fff;
+      background-color: #3366cc;
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -31,14 +30,14 @@ main {
       padding: 15px 30px;
       font-size: 1.5em;
       cursor: pointer;
-      background-color: #28a745;
+      background-color: #333399;
       color: white;
       border: none;
       border-radius: 5px;
       transition: background-color 0.3s ease;
     }
     #start-button:hover {
-      background-color: #218838;
+      background-color: #3366cc;
     }
 
     /* Question Slide Styling */
@@ -66,8 +65,8 @@ main {
       transition: background-color 0.2s ease, border-color 0.2s ease;
     }
     .options p:hover:not(.selected):not(.correct):not(.incorrect) {
-      background-color: #f0f0f0;
-      border-color: #bbb;
+      background-color: #333399;
+      border-color: #333399;
     }
     .selected {
       background-color: #e0f7fa;
