@@ -46,7 +46,7 @@
       padding: 20px 0;
     }
     .question-slide p:first-of-type {
-      font-weight: bold;
+
     }
     .question-slide img {
       max-width: 100%;
@@ -115,7 +115,7 @@
       font-size: 1em;
       cursor: pointer;
       background-color: #04ff00;
-      color: rgb(255, 0, 0);
+      color: rgb(0, 26, 255);
       border: none;
       border-radius: 5px;
       transition: background-color 0.3s ease;
