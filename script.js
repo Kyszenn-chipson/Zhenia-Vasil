@@ -8,6 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const submitQuizButton = document.getElementById('submitQuiz');
       const scoreDisplay = document.getElementById('score');
 
+      let block = document.querySelector('.block')
+document.addEventListener('mousemove', function(e) {
+    let dx = e.pageX - window.innerWidth / 2
+    let dy = e.pageY - window.innerHeight / 2
+    let angleX = 20 * dx / window.innerWidth / 2
+    let angleY = 20 * dy / window.innerHeight / 2
+    block.style.transform = `rotateX(${-angleY}deg) rotateY(${angleX}deg)`
+})
+
       let currentQuestionIndex = 0;
       let score = 0;
       // Store user's selected answers for persistent state
